@@ -1,0 +1,79 @@
+/* Box styling for drop zone */
+#dropZone {
+  width: 400px;
+  height: 250px;
+  margin: 50px auto;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Visual feedback when dragging a file over the drop zone */
+#dropZone.hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+/* Hide the actual file input */
+#fileInput {
+  display: none;
+}
+
+/* Styling for the browse button inside the drop zone */
+#browseBtn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Styling for the list of selected files */
+#fileList {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cancelBtn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Styling for the send/upload button below the drop zone */
+#uploadBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+/* Status message styling */
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
